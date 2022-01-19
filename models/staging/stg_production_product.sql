@@ -1,0 +1,1 @@
+select productid from {{source('projetofinal-338517','production_product')}}
