@@ -1,0 +1,38 @@
+version: 2
+
+sources:
+  - name: projetofinal
+    description: Esta é uma réplica do banco de dados Postgres usado pela Adventure Works.
+    tables:
+      - name: production_product
+        description: >
+          Dados referentes aos produtos.
+        columns:
+          - name: productid
+            description: é a chave primária da tabela
+            tests:
+              - unique
+              - not_null
+           
+
+      - name: public_address
+        description: Esta tabela contém informações sobre os endereços dos clientes.
+
+      - name: public_customer
+       description: Esta tabela contém informações sobre os clientes.
+
+      - name: sales_creditcar
+       description: Esta tabela contém informações sobre os cartões de crédito.
+
+      - name: sales_salesorderdetail
+       description: Esta tabela contém informações detalhadas sobre os pedidos.
+
+      - name: sales_salesorderheader
+       description: Esta tabela contém informações gerais sobre os pedidos.
+
+      - name: sales_salesorderheadersalesreason
+       description: Esta tabela contém informações sobre as razões de compra.
+
+      - name: sales_salesreason
+       description: Esta tabela contém informações sobre quais são as razões de compra.
+
